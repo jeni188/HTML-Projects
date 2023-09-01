@@ -1,0 +1,292 @@
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav h1 a {
+  font-family: var(--sans);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: auto;
+  margin-right: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* introduction */
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+#intro span {
+  display: block;
+  font-size: 4rem;
+  color: var(--aqu);
+  font-family: var(--sans);
+}
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+/* project section */
+.project {
+  background-color: var(--dkblue);
+  padding: 4rem 0;
+}
+
+.control-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-para p {
+  margin-bottom: 0;
+}
+
+.project-para h3 {
+  color: var(--aqua);
+}
+
+.project-para .black-box {
+  background-color: var(--black);
+  padding:1rem ;
+  border-radius: 10px;
+  font-size: 1rem;
+  
+}
+
+.project-para h4 {
+  margin-bottom: 0;
+}
+
+.project-para ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row-wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width:550px) {}
+
+.project .control-width {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+.project-para {
+  grid-column: 5/11;
+  grid-row: 1/2;
+  order: 2;
+  text-align: right;
+}
+
+.image-project {
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1.4rem;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.image-project img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* portfolo-section */
+.portfolio {
+  background-color: var(--dkblue);
+  padding: 4rem 0;
+}
+.width-control{
+  max-width: 1200px;
+  margin: auto;
+}
+.portfolio-para p {
+ margin-bottom: 0; 
+}
+.portfolio-para h3{
+  color:  var(--aqua);
+}
+.portfolio-para .portfolio-blackbox{
+  background-color: var(--black);
+  padding:1rem ;
+  border-radius: 10px;
+  font-size: 1rem;
+  
+}
+.portfolio-para h4{
+  margin-bottom: 0; 
+}
+.portfolio-para ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row-wrap;
+  gap: 1rem;
+}
+@media screen and (min-width:550px) {}
+
+.portfolio .width-control {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+.portfolio-para {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  order: 2;
+  text-align: left;
+}
+.portfolio-image {
+  
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1.4rem;
+  grid-column:  5/11;
+  grid-row: 1/2;
+  justify-content: flex-end;
+}
+.portfolio-image img {
+  
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* upcoming project */
+.upcoming-project {
+  background-color: var(--dkblue);
+  padding: 4rem 0;
+}
+
+.width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.upcoming-para p {
+  margin-bottom: 0;
+}
+
+.upcoming-para h3 {
+  color: var(--aqua);
+}
+
+.upcoming-para .box {
+  background-color: var(--black);
+  padding:1rem ;
+  border-radius: 10px;
+  font-size: 1rem;
+  
+}
+
+.upcoming-para h4 {
+  margin-bottom: 0;
+}
+
+.upcoming-para ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row-wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width:550px) {}
+
+.upcoming-project .width {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+
+.upcoming-para {
+  grid-column: 5/11;
+  grid-row: 1/2;
+  order: 2;
+  text-align: right;
+}
+
+.image {
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1.4rem;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* contact section */
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+  background-color: var(--plumb);
+  border-bottom: 1px solid white;
+}
+
+#contact p {
+  width: 400px;
+  margin: 30px auto;
+}
+
+#contact .button {
+  display: inline-block;
+}
+
+/* footer section */
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
